@@ -107,9 +107,9 @@ h2 { font-size: clamp(1.85rem, 3.55vw, 3rem); font-weight: 810; letter-spacing: 
 .screenshot-gallery figure { display: grid; justify-items: center; gap: .7rem; text-align: center; font-size: .98rem; font-weight: 650; }
 .screenshot { width: min(100%, 11rem); }
 .video-preview { border: 1px solid var(--line); border-radius: 1.3rem; background: var(--white); overflow: hidden; }
-.video-preview img { width: 100%; height: auto; }
+.video-preview iframe { display: block; width: 100%; height: auto; min-height: 200px; aspect-ratio: 16 / 9; border: 0; background: #000; }
 .video-preview figcaption { display: flex; align-items: center; justify-content: space-between; gap: .55rem; flex-wrap: wrap; padding: .85rem 1.1rem; }
-.status { padding: .28rem .64rem; border-radius: 1rem; background: var(--mint); color: var(--green-dark); font-size: .87rem; font-weight: 700; }
+.video-preview figcaption a { color: var(--green-dark); font-weight: 650; }
 .plan-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.3rem; }
 .plan { display: flex; align-items: flex-start; gap: 1rem; padding: clamp(1rem, 2.5vw, 1.65rem); border: 1px solid var(--line); border-radius: 1.1rem; background: var(--white); }
 .plan-pro { background: var(--mint); }
