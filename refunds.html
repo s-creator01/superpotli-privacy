@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<title>SuperPotli Refund Information</title>
+<style>
+:root{
+  --bg:#f1faf5;
+  --bg-glow:#dff5ea;
+  --hero:linear-gradient(135deg,#f3fdf8 0%,#ddf6ea 100%);
+  --card:rgba(255,255,255,.92);
+  --text:#141b23;
+  --sec:#44554d;
+  --accent:#087d54;
+  --accent-hover:#066342;
+  --pill-bg:#ddf5e8;
+  --pill-border:#bfe5d2;
+  --pill-text:#065c3e;
+  --line:#d2e7dc;
+  --shadow:0 6px 20px rgba(8,125,84,.06);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#070a08;
+  --bg-glow:#0c1711;
+  --hero:linear-gradient(135deg,#111a15 0%,#161a18 100%);
+  --card:#131815;
+  --text:#eef4f0;
+  --sec:#aab8b0;
+  --accent:#4ade9b;
+  --accent-hover:#6ee7b0;
+  --pill-bg:#192920;
+  --pill-border:#2a4537;
+  --pill-text:#6ee7b0;
+  --line:#24332a;
+  --shadow:none;
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:radial-gradient(circle at top right,var(--bg-glow) 0%,var(--bg) 52%);
+  background-color:var(--bg);
+  color:var(--text);
+  font:16.5px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-text-size-adjust:100%;
+}
+.skip{
+  position:absolute;
+  left:-9999px;
+  top:0;
+  background:var(--accent);
+  color:#fff;
+  padding:.65rem 1rem;
+  border-radius:10px;
+  font-weight:600;
+  z-index:10;
+}
+.skip:focus{left:1rem;top:1rem}
+main{max-width:48rem;margin:0 auto;padding:1.25rem 1rem 3rem}
+.hero{
+  background:var(--hero);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:1.25rem 1.25rem 1.15rem;
+  box-shadow:var(--shadow);
+  margin-bottom:1.15rem;
+}
+.brand-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:.75rem;
+  flex-wrap:wrap;
+  margin-bottom:.7rem;
+}
+.brand{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--text);
+  letter-spacing:-.01em;
+}
+.brand-logo{
+  width:36px;
+  height:36px;
+  border-radius:10px;
+  display:block;
+  flex:none;
+}
+@media (prefers-color-scheme:dark){.skip{color:#052115}}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding:.24rem .65rem;
+  border-radius:999px;
+  background:var(--pill-bg);
+  border:1px solid var(--pill-border);
+  color:var(--pill-text);
+  font-size:.82rem;
+  font-weight:600;
+}
+h1{font-size:1.68rem;line-height:1.22;margin:.15rem 0 .35rem;letter-spacing:-.015em}
+.meta{color:var(--sec);margin:0;font-size:.92rem;font-weight:500}
+.subtitle{color:var(--text);margin:.55rem 0 0;font-size:.97rem}
+nav{
+  display:flex;
+  gap:.5rem;
+  flex-wrap:wrap;
+  margin-top:1rem;
+  padding-top:.9rem;
+  border-top:1px solid var(--line);
+}
+nav a{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  padding:.4rem .85rem;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:var(--card);
+  color:var(--text);
+  text-decoration:none;
+  font-size:.9rem;
+  font-weight:600;
+}
+nav a:hover{border-color:var(--accent);color:var(--accent-hover)}
+nav a.active{
+  background:var(--pill-bg);
+  border-color:var(--pill-border);
+  color:var(--pill-text);
+}
+a{color:var(--accent);text-underline-offset:2px}
+a:hover{color:var(--accent-hover)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:1.05rem 1.2rem;
+  margin-bottom:.85rem;
+  box-shadow:var(--shadow);
+}
+h2{font-size:1.15rem;line-height:1.35;margin:0 0 .55rem;color:var(--accent);letter-spacing:-.01em}
+p{margin:.55rem 0;overflow-wrap:anywhere}
+p:last-child,ul:last-child{margin-bottom:0}
+ul{margin:.5rem 0;padding-left:1.25rem}
+li{margin:.35rem 0;overflow-wrap:anywhere}
+footer{
+  margin-top:1.75rem;
+  padding:1.1rem .25rem 0;
+  border-top:1px solid var(--line);
+  color:var(--sec);
+  font-size:.88rem;
+}
+.footer-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.4rem 1rem;
+  margin-top:.55rem;
+}
+@media (max-width:540px){
+  main{padding:.85rem .75rem 2.25rem}
+  .hero{padding:1rem;border-radius:18px}
+  .card{padding:.95rem 1rem;border-radius:16px}
+  h1{font-size:1.45rem}
+  nav a{font-size:.87rem;padding:.35rem .75rem}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<main>
+<header class="hero">
+<div class="brand-row">
+<span class="brand"><img class="brand-logo" src="assets/logo.png" alt="SuperPotli" width="36" height="36">SuperPotli</span>
+<span class="badge">100% Offline Android Toolkit</span>
+</div>
+<h1>SuperPotli Refund Information</h1>
+<p class="meta">Last updated: 27 November 2026</p>
+<p class="subtitle">How Lifetime Pro works on Google Play, how to request a refund within 48 hours, and how to restore Pro.</p>
+<nav aria-label="SuperPotli legal and support pages">
+<a href="index.html">Privacy Policy</a>
+<a href="terms.html">Terms of Use</a>
+<a class="active" aria-current="page" href="refunds.html">Refund Information</a>
+<a href="contact.html">Contact &amp; Support</a>
+<a href="open-source.html">Open-Source Notices</a>
+</nav>
+</header>
+<div id="content">
+<section class="card">
+<h2 id="refund-model">About Lifetime Pro</h2>
+<p>SuperPotli includes 185 offline tools across 12 categories: 145 Free tools and 40 Pro tools. Three Free tool families also have limits lifted by Pro:</p>
+<ul><li>Video tools: up to 5 minutes per clip in Free (unlimited length in Pro).</li><li>Audio editing tools: up to 15 minutes per clip in Free (unlimited length in Pro).</li><li>Resize Image and Compress Image: up to 10 pictures at once in Free (up to 300 pictures at once in Pro).</li></ul>
+<p>Lifetime Pro (superpotli_pro) is an optional one-time in-app purchase processed through Google Play Billing. It unlocks all 40 Pro tools, removes the three Free limits, and includes all future Pro updates. There are no ads now or in the future, no subscriptions, no free trial, no automatic recurring payments, and no mandatory login or account.</p>
+</section>
+<section class="card">
+<h2 id="refund-48h">Requesting a refund within 48 hours (Google Play)</h2>
+<p>All SuperPotli Pro payments are processed directly by Google Play. Under Google Play's refund policy (<a href="https://support.google.com/googleplay/answer/2479637" rel="noopener noreferrer">https://support.google.com/googleplay/answer/2479637</a>), you may request a refund through Google Play within 48 hours of purchase:</p>
+<ul><li>Open play.google.com or the Google Play Store app, sign in with the Google account used for the purchase, go to Payments &amp; subscriptions &gt; Budget &amp; order history, find SuperPotli Pro, and select Request a refund.</li><li>Refund eligibility and final approval are determined solely by Google Play under Google Play's refund rules; refunds are not guaranteed.</li><li>For buyers in the European Economic Area (EEA) and the United Kingdom, purchasing digital content that unlocks immediately may waive the statutory 14-day right of withdrawal as disclosed during Google Play checkout.</li></ul>
+</section>
+<section class="card">
+<h2 id="refund-after">Billing issues or requests after 48 hours</h2>
+<p>If more than 48 hours have passed since your purchase, or if you experience a billing issue (such as a pending charge or Pro not unlocking after payment), please email <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a> with your Google Play order ID (which starts with GPA.xxxx-...) from your Google Play receipt email or pay.google.com.</p>
+<p>Because S Projects runs no payment servers and Google Play handles all transactions, we cannot guarantee refunds outside Google Play's refund policy, but we will review your order ID and help resolve entitlement or billing problems.</p>
+</section>
+<section class="card">
+<h2 id="refund-restore">Restoring your purchase before requesting a refund</h2>
+<p>If you reinstalled SuperPotli, cleared app data, or switched to a new Android phone, you do not need to buy Pro again:</p>
+<ul><li>Make sure your device is signed into the exact Google Play account that originally purchased Lifetime Pro.</li><li>Connect briefly to the internet so Google Play can verify your purchase locally through Binder IPC, then open Settings &gt; Pro (or the Lifetime Pro screen) and tap Restore purchase.</li><li>Once verified, SuperPotli caches only minimal local state (pro_owned, pro_verified_at, and pro_refund_notice) in private DataStore so Pro keeps working completely offline. If Google Play reports a purchase as refunded, Pro unlocks turn off and all 145 Free tools keep working.</li></ul>
+</section>
+<section class="card">
+<h2 id="refund-contact">Billing support contact</h2>
+<p>S Projects<br>
+Email: <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a></p>
+</section>
+</div>
+<footer>
+<div>SuperPotli (com.superpotli.app) is an independent offline Android app by S Projects · Support: <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a></div>
+<div class="footer-links"><a href="index.html">Privacy Policy</a> <a href="terms.html">Terms of Use</a> <a href="refunds.html">Refund Information</a> <a href="contact.html">Contact &amp; Support</a> <a href="open-source.html">Open-Source Notices</a></div>
+</footer>
+</main>
+</body>
+</html>

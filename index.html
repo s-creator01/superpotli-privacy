@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<title>SuperPotli Privacy Policy</title>
+<style>
+:root{
+  --bg:#f1faf5;
+  --bg-glow:#dff5ea;
+  --hero:linear-gradient(135deg,#f3fdf8 0%,#ddf6ea 100%);
+  --card:rgba(255,255,255,.92);
+  --text:#141b23;
+  --sec:#44554d;
+  --accent:#087d54;
+  --accent-hover:#066342;
+  --pill-bg:#ddf5e8;
+  --pill-border:#bfe5d2;
+  --pill-text:#065c3e;
+  --line:#d2e7dc;
+  --shadow:0 6px 20px rgba(8,125,84,.06);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#070a08;
+  --bg-glow:#0c1711;
+  --hero:linear-gradient(135deg,#111a15 0%,#161a18 100%);
+  --card:#131815;
+  --text:#eef4f0;
+  --sec:#aab8b0;
+  --accent:#4ade9b;
+  --accent-hover:#6ee7b0;
+  --pill-bg:#192920;
+  --pill-border:#2a4537;
+  --pill-text:#6ee7b0;
+  --line:#24332a;
+  --shadow:none;
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:radial-gradient(circle at top right,var(--bg-glow) 0%,var(--bg) 52%);
+  background-color:var(--bg);
+  color:var(--text);
+  font:16.5px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-text-size-adjust:100%;
+}
+.skip{
+  position:absolute;
+  left:-9999px;
+  top:0;
+  background:var(--accent);
+  color:#fff;
+  padding:.65rem 1rem;
+  border-radius:10px;
+  font-weight:600;
+  z-index:10;
+}
+.skip:focus{left:1rem;top:1rem}
+main{max-width:48rem;margin:0 auto;padding:1.25rem 1rem 3rem}
+.hero{
+  background:var(--hero);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:1.25rem 1.25rem 1.15rem;
+  box-shadow:var(--shadow);
+  margin-bottom:1.15rem;
+}
+.brand-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:.75rem;
+  flex-wrap:wrap;
+  margin-bottom:.7rem;
+}
+.brand{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--text);
+  letter-spacing:-.01em;
+}
+.brand-logo{
+  width:36px;
+  height:36px;
+  border-radius:10px;
+  display:block;
+  flex:none;
+}
+@media (prefers-color-scheme:dark){.skip{color:#052115}}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding:.24rem .65rem;
+  border-radius:999px;
+  background:var(--pill-bg);
+  border:1px solid var(--pill-border);
+  color:var(--pill-text);
+  font-size:.82rem;
+  font-weight:600;
+}
+h1{font-size:1.68rem;line-height:1.22;margin:.15rem 0 .35rem;letter-spacing:-.015em}
+.meta{color:var(--sec);margin:0;font-size:.92rem;font-weight:500}
+.subtitle{color:var(--text);margin:.55rem 0 0;font-size:.97rem}
+nav{
+  display:flex;
+  gap:.5rem;
+  flex-wrap:wrap;
+  margin-top:1rem;
+  padding-top:.9rem;
+  border-top:1px solid var(--line);
+}
+nav a{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  padding:.4rem .85rem;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:var(--card);
+  color:var(--text);
+  text-decoration:none;
+  font-size:.9rem;
+  font-weight:600;
+}
+nav a:hover{border-color:var(--accent);color:var(--accent-hover)}
+nav a.active{
+  background:var(--pill-bg);
+  border-color:var(--pill-border);
+  color:var(--pill-text);
+}
+a{color:var(--accent);text-underline-offset:2px}
+a:hover{color:var(--accent-hover)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:1.05rem 1.2rem;
+  margin-bottom:.85rem;
+  box-shadow:var(--shadow);
+}
+h2{font-size:1.15rem;line-height:1.35;margin:0 0 .55rem;color:var(--accent);letter-spacing:-.01em}
+p{margin:.55rem 0;overflow-wrap:anywhere}
+p:last-child,ul:last-child{margin-bottom:0}
+ul{margin:.5rem 0;padding-left:1.25rem}
+li{margin:.35rem 0;overflow-wrap:anywhere}
+footer{
+  margin-top:1.75rem;
+  padding:1.1rem .25rem 0;
+  border-top:1px solid var(--line);
+  color:var(--sec);
+  font-size:.88rem;
+}
+.footer-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.4rem 1rem;
+  margin-top:.55rem;
+}
+@media (max-width:540px){
+  main{padding:.85rem .75rem 2.25rem}
+  .hero{padding:1rem;border-radius:18px}
+  .card{padding:.95rem 1rem;border-radius:16px}
+  h1{font-size:1.45rem}
+  nav a{font-size:.87rem;padding:.35rem .75rem}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<main>
+<header class="hero">
+<div class="brand-row">
+<span class="brand"><img class="brand-logo" src="assets/logo.png" alt="SuperPotli" width="36" height="36">SuperPotli</span>
+<span class="badge">100% Offline Android Toolkit</span>
+</div>
+<h1>SuperPotli Privacy Policy</h1>
+<p class="meta">Last updated: 27 November 2026</p>
+<p class="subtitle">185 offline tools across 12 categories. Zero internet permission, no accounts, no ads, and no tracking.</p>
+<nav aria-label="SuperPotli legal and support pages">
+<a class="active" aria-current="page" href="index.html">Privacy Policy</a>
+<a href="terms.html">Terms of Use</a>
+<a href="refunds.html">Refund Information</a>
+<a href="contact.html">Contact &amp; Support</a>
+<a href="open-source.html">Open-Source Notices</a>
+</nav>
+</header>
+<div id="content">
+<section class="card">
+<h2 id="short">The short version</h2>
+<p>SuperPotli (com.superpotli.app) is a completely offline Android toolkit of 185 tools across 12 categories. We do not collect, store, share, or sell any personal information about you.</p>
+<p>The app does not have the Android INTERNET permission or the ACCESS_NETWORK_STATE permission (both are explicitly removed from the app manifest), so it cannot send your files or data anywhere. There are no accounts, no advertising, no analytics, and no crash-reporting tools in the app.</p>
+</section>
+<section class="card">
+<h2 id="who">Who we are</h2>
+<p>SuperPotli is an Android app published by S Projects ("we"). You can contact us at <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a>.</p>
+</section>
+<section class="card">
+<h2 id="uses">What the app uses, and why</h2>
+<ul><li>Files and photos you choose. You select photos, videos, audio, documents, or archives using Android's system Photo Picker and Storage Access Framework (file picker), or via "Open with" or "Share" from another app. SuperPotli declares no storage or READ_MEDIA permissions. Files stay on your phone, are read only to perform the tool action you requested, and results are saved only where you choose. We never receive your files.</li><li>Camera. Used only on tap while an active camera tool is open, such as Scan to PDF, QR and Barcode Scanner, Camera Color Picker, Magnifier, Mirror, Protractor camera view, or capturing an image or signature. Pictures stay on your phone and are saved only if you choose to save them.</li><li>Microphone. Used only on tap while Sound Meter, Instrument Tuner, or Voice Recorder is running. Recordings stay on your phone and are saved only if you choose to save them.</li><li>Location. Used in the foreground only when you tap Start in Speedometer or Altimeter. Coordinates and speed are shown live on your screen and are never saved or sent.</li><li>Motion and light sensors. Tools such as Compass, Level, Luxometer, Magnetometer, Accelerometer, and Vibrometer read your device's sensors locally on the phone. They need no runtime permission.</li><li>Flashlight. Used only when you turn on the SOS Flashlight tool.</li><li>Google Play Billing. Used through Android's local Google Play Store Binder connection only for the optional one-time Lifetime Pro upgrade and purchase restoration.</li></ul>
+<p>Android asks you before the app can access the camera, microphone, or foreground location. You can decline and all other tools keep working, or change permissions anytime in your phone's Settings &gt; Apps &gt; SuperPotli &gt; Permissions.</p>
+</section>
+<section class="card">
+<h2 id="stored">What is stored on your phone</h2>
+<p>Some information stays on your phone in the app's own private storage so SuperPotli works the way you configure it:</p>
+<ul><li>Settings and preferences in local DataStore: theme, glass style, language, Default currency, sound and vibration choices, pinned and favourite tools, quick-preview preference, and whether you have completed the welcome screens.</li><li>Cached Pro status in local DataStore: if you unlock Lifetime Pro, the app stores only minimal local flags (pro_owned, pro_verified_at, and pro_refund_notice) so Pro keeps working completely offline. We never store payment card numbers, billing addresses, or raw purchase tokens.</li><li>Optional activity history: off by default. If turned on, tool names and timestamps stay locally on your phone and can be cleared anytime in Settings.</li><li>Drafts, reusable signatures, and temporary cache: unfinished tool drafts are stored in app-private non-backed-up storage (noBackupFilesDir), an optional reusable signature image for Sign PDF or Sign Image is stored in app-private storage (filesDir), and temporary working copies are kept in app cache.</li></ul>
+<p>Auto-backup and device-to-device data extraction are disabled (allowBackup is false and Android 12+ data extraction rules exclude cloud backup and device-to-device transfer). Nothing is sent to us. You can clear temporary files in Settings &gt; Storage &amp; Cache, discard unfinished drafts in a tool, or tap "Clear data" in Android Settings &gt; Apps &gt; SuperPotli (or uninstall the app) to erase all app-private data. Files you exported or saved to your own folders remain where you saved them.</p>
+</section>
+<section class="card">
+<h2 id="not">What we do not do</h2>
+<ul><li>No accounts or mandatory sign-in.</li><li>No advertising and no ad networks, now or in the future.</li><li>No subscriptions, no trial periods, and no automatic recurring payments.</li><li>No analytics, tracking, or crash-reporting services.</li><li>No selling or sharing of personal information.</li><li>No internet access: both the Android INTERNET permission and ACCESS_NETWORK_STATE permission are removed from the app manifest.</li></ul>
+</section>
+<section class="card">
+<h2 id="sharing">Sharing</h2>
+<p>External actions happen only when you tap to start them, such as Share, Open with another app, tapping a scanned link, phone number, or email action in QR and Barcode Scanner, emailing <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a>, or opening an optional browser link to our legal pages. Files or details handed to another app are governed by that app's own privacy policy.</p>
+</section>
+<section class="card">
+<h2 id="purchases">Purchases</h2>
+<p>SuperPotli is free to install and includes 145 Free tools out of 185 offline tools across 12 categories. Three Free tool families have limits lifted by Pro: videos up to 5 minutes, audio edits up to 15 minutes, and Resize or Compress Image up to 10 pictures at once (up to 300 in Pro).</p>
+<p>An optional one-time Lifetime Pro upgrade (superpotli_pro) unlocks all 40 Pro tools, removes those three Free limits, and includes all future Pro updates at no extra cost. There are no ads, no subscriptions, no trial offers, and no automatic recurring payments.</p>
+<p>Google Play handles the payment (Google Play Billing Library 8.0.0) under Google's own Privacy Policy and Terms. S Projects does not receive or store your payment card details, billing details, or Google account credentials, and runs no servers. You can restore your Lifetime Pro unlock anytime on devices signed into the same Google Play account using Restore purchase.</p>
+<p>You may request a refund through Google Play within 48 hours of purchase; refund eligibility and approval are determined by Google Play under Google Play's refund policy (for EEA and UK buyers, immediate digital delivery may waive the 14-day statutory withdrawal right at checkout). For billing questions after 48 hours or order help, contact <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a> with your Google Play order ID (GPA.xxxx-...).</p>
+</section>
+<section class="card">
+<h2 id="play">Google Play</h2>
+<p>If you installed SuperPotli from Google Play, Google handles app downloads, updates, and purchase processing under Google's own Privacy Policy. Google Play Console may show S Projects aggregated, anonymous install counts and opt-in diagnostic or crash statistics from devices that chose to share diagnostics with Google. The app itself transmits nothing, and we cannot identify you from those totals.</p>
+</section>
+<section class="card">
+<h2 id="children">Children</h2>
+<p>SuperPotli is a general-purpose utility toolkit and is not directed at children. We do not knowingly collect personal information from anyone, including children.</p>
+</section>
+<section class="card">
+<h2 id="security">Security</h2>
+<p>Your files, photos, recordings, and sensor readings stay on your phone inside private app storage that other apps cannot read, and the app has zero network permissions so data cannot be transmitted off your device. Cloud backup and device-to-device data transfers are also disabled in app settings. Because data stays on your device, its security also relies on your phone's screen lock, device encryption, and system updates.</p>
+</section>
+<section class="card">
+<h2 id="opensource">Open-source software</h2>
+<p>SuperPotli processes files completely offline using open-source software on your device, including the Rust UniFFI document engine, LAME 3.100 MP3 encoder, PDFBox-Android, Tesseract4Android OCR, Media3, CameraX, and ZXing. None of these libraries have network access. Full licence notices and the LAME source offer are listed inside the app under Settings &gt; About &gt; Licenses.</p>
+</section>
+<section class="card">
+<h2 id="rights">Your rights</h2>
+<p>Privacy laws such as the GDPR (European Union and United Kingdom) and the CCPA/CPRA (California) give people the right to access, correct, delete, and obtain a copy of personal information held about them, and to opt out of its sale or sharing.</p>
+<p>S Projects holds no user accounts and collects no personal information from SuperPotli, so there is nothing for us to view, correct, delete, or hand over, and we never sell, share, or profile you. All app preferences, drafts, and local history stay on your phone under your control (see "What is stored on your phone" above).</p>
+<p>If you email <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a> for support or billing assistance, we receive your email address and message solely to respond to your inquiry and delete them when no longer needed. If you reside in a jurisdiction with a data protection authority, you also have the right to lodge a complaint with that authority.</p>
+</section>
+<section class="card">
+<h2 id="changes">Changes to this policy</h2>
+<p>If this policy changes, we will update the "Last updated" date at the top of this page and inside the app. If SuperPotli ever changes how it handles data, we will update this policy before that version is released and note it in the app's release notes.</p>
+</section>
+<section class="card">
+<h2 id="contact">Contact</h2>
+<p>S Projects<br>
+Email: <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a></p>
+</section>
+</div>
+<footer>
+<div>SuperPotli (com.superpotli.app) is an independent offline Android app by S Projects · Support: <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a></div>
+<div class="footer-links"><a href="index.html">Privacy Policy</a> <a href="terms.html">Terms of Use</a> <a href="refunds.html">Refund Information</a> <a href="contact.html">Contact &amp; Support</a> <a href="open-source.html">Open-Source Notices</a></div>
+</footer>
+</main>
+</body>
+</html>

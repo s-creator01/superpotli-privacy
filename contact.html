@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<title>SuperPotli Contact &amp; Support</title>
+<style>
+:root{
+  --bg:#f1faf5;
+  --bg-glow:#dff5ea;
+  --hero:linear-gradient(135deg,#f3fdf8 0%,#ddf6ea 100%);
+  --card:rgba(255,255,255,.92);
+  --text:#141b23;
+  --sec:#44554d;
+  --accent:#087d54;
+  --accent-hover:#066342;
+  --pill-bg:#ddf5e8;
+  --pill-border:#bfe5d2;
+  --pill-text:#065c3e;
+  --line:#d2e7dc;
+  --shadow:0 6px 20px rgba(8,125,84,.06);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#070a08;
+  --bg-glow:#0c1711;
+  --hero:linear-gradient(135deg,#111a15 0%,#161a18 100%);
+  --card:#131815;
+  --text:#eef4f0;
+  --sec:#aab8b0;
+  --accent:#4ade9b;
+  --accent-hover:#6ee7b0;
+  --pill-bg:#192920;
+  --pill-border:#2a4537;
+  --pill-text:#6ee7b0;
+  --line:#24332a;
+  --shadow:none;
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:radial-gradient(circle at top right,var(--bg-glow) 0%,var(--bg) 52%);
+  background-color:var(--bg);
+  color:var(--text);
+  font:16.5px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-text-size-adjust:100%;
+}
+.skip{
+  position:absolute;
+  left:-9999px;
+  top:0;
+  background:var(--accent);
+  color:#fff;
+  padding:.65rem 1rem;
+  border-radius:10px;
+  font-weight:600;
+  z-index:10;
+}
+.skip:focus{left:1rem;top:1rem}
+main{max-width:48rem;margin:0 auto;padding:1.25rem 1rem 3rem}
+.hero{
+  background:var(--hero);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:1.25rem 1.25rem 1.15rem;
+  box-shadow:var(--shadow);
+  margin-bottom:1.15rem;
+}
+.brand-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:.75rem;
+  flex-wrap:wrap;
+  margin-bottom:.7rem;
+}
+.brand{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--text);
+  letter-spacing:-.01em;
+}
+.brand-logo{
+  width:36px;
+  height:36px;
+  border-radius:10px;
+  display:block;
+  flex:none;
+}
+@media (prefers-color-scheme:dark){.skip{color:#052115}}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding:.24rem .65rem;
+  border-radius:999px;
+  background:var(--pill-bg);
+  border:1px solid var(--pill-border);
+  color:var(--pill-text);
+  font-size:.82rem;
+  font-weight:600;
+}
+h1{font-size:1.68rem;line-height:1.22;margin:.15rem 0 .35rem;letter-spacing:-.015em}
+.meta{color:var(--sec);margin:0;font-size:.92rem;font-weight:500}
+.subtitle{color:var(--text);margin:.55rem 0 0;font-size:.97rem}
+nav{
+  display:flex;
+  gap:.5rem;
+  flex-wrap:wrap;
+  margin-top:1rem;
+  padding-top:.9rem;
+  border-top:1px solid var(--line);
+}
+nav a{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  padding:.4rem .85rem;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:var(--card);
+  color:var(--text);
+  text-decoration:none;
+  font-size:.9rem;
+  font-weight:600;
+}
+nav a:hover{border-color:var(--accent);color:var(--accent-hover)}
+nav a.active{
+  background:var(--pill-bg);
+  border-color:var(--pill-border);
+  color:var(--pill-text);
+}
+a{color:var(--accent);text-underline-offset:2px}
+a:hover{color:var(--accent-hover)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:1.05rem 1.2rem;
+  margin-bottom:.85rem;
+  box-shadow:var(--shadow);
+}
+h2{font-size:1.15rem;line-height:1.35;margin:0 0 .55rem;color:var(--accent);letter-spacing:-.01em}
+p{margin:.55rem 0;overflow-wrap:anywhere}
+p:last-child,ul:last-child{margin-bottom:0}
+ul{margin:.5rem 0;padding-left:1.25rem}
+li{margin:.35rem 0;overflow-wrap:anywhere}
+footer{
+  margin-top:1.75rem;
+  padding:1.1rem .25rem 0;
+  border-top:1px solid var(--line);
+  color:var(--sec);
+  font-size:.88rem;
+}
+.footer-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.4rem 1rem;
+  margin-top:.55rem;
+}
+@media (max-width:540px){
+  main{padding:.85rem .75rem 2.25rem}
+  .hero{padding:1rem;border-radius:18px}
+  .card{padding:.95rem 1rem;border-radius:16px}
+  h1{font-size:1.45rem}
+  nav a{font-size:.87rem;padding:.35rem .75rem}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<main>
+<header class="hero">
+<div class="brand-row">
+<span class="brand"><img class="brand-logo" src="assets/logo.png" alt="SuperPotli" width="36" height="36">SuperPotli</span>
+<span class="badge">100% Offline Android Toolkit</span>
+</div>
+<h1>SuperPotli Contact &amp; Support</h1>
+<p class="meta">Last updated: 27 November 2026</p>
+<p class="subtitle">How to reach S Projects for app support, Lifetime Pro billing help, privacy questions, or open-source requests.</p>
+<nav aria-label="SuperPotli legal and support pages">
+<a href="index.html">Privacy Policy</a>
+<a href="terms.html">Terms of Use</a>
+<a href="refunds.html">Refund Information</a>
+<a class="active" aria-current="page" href="contact.html">Contact &amp; Support</a>
+<a href="open-source.html">Open-Source Notices</a>
+</nav>
+</header>
+<div id="content">
+<section class="card">
+<h2 id="contact-info">Developer and support email</h2>
+<ul><li>App: SuperPotli (com.superpotli.app) — 185 offline tools across 12 categories</li><li>Developer: S Projects</li><li>Support email: <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a></li></ul>
+<p>Support is provided by email. No street address or telephone number is published on these pages; if a regional Google Play Trader profile requires business contact details separately, those are submitted directly in Google Play Console.</p>
+</section>
+<section class="card">
+<h2 id="contact-bugs">App support and bug reports</h2>
+<p>Because SuperPotli has zero internet permissions and includes no analytics or crash-reporting tools, the app never sends logs or diagnostics automatically. When reporting an issue to <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a>, please include:</p>
+<ul><li>The name of the tool you were using.</li><li>Your Android version and phone model.</li><li>A brief description of what happened and what you expected.</li></ul>
+<p>Please avoid attaching sensitive personal files unless necessary to explain an issue.</p>
+</section>
+<section class="card">
+<h2 id="contact-billing">Lifetime Pro billing and restore help</h2>
+<p>For help with Lifetime Pro (superpotli_pro), purchase restoration, or refund questions after 48 hours, email <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a> and include:</p>
+<ul><li>Your Google Play order ID (GPA.xxxx-...) from your Google Play receipt or pay.google.com.</li><li>Confirmation that you are signed into the Google Play account that made the purchase.</li></ul>
+<p>Reminder: Lifetime Pro is a single one-time purchase with all future Pro updates included, no ads, no subscriptions, no free trial, and no automatic recurring payments. You can also tap Restore purchase inside Settings &gt; Pro anytime while briefly online.</p>
+</section>
+<section class="card">
+<h2 id="contact-legal">Privacy and open-source notices</h2>
+<ul><li>Privacy inquiries: S Projects collects no personal data inside SuperPotli. If you email <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a>, we use your email address and message only to reply and delete them once your request is resolved.</li><li>Open-source source offer: SuperPotli includes the LAME 3.100 MP3 encoder (LGPL) in libsuperpotli_mp3.so. You can download the source archive via our Open-Source Notices page or request a copy by emailing <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a>.</li></ul>
+</section>
+</div>
+<footer>
+<div>SuperPotli (com.superpotli.app) is an independent offline Android app by S Projects · Support: <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a></div>
+<div class="footer-links"><a href="index.html">Privacy Policy</a> <a href="terms.html">Terms of Use</a> <a href="refunds.html">Refund Information</a> <a href="contact.html">Contact &amp; Support</a> <a href="open-source.html">Open-Source Notices</a></div>
+</footer>
+</main>
+</body>
+</html>

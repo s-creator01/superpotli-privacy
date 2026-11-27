@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<title>SuperPotli Open-Source Notices</title>
+<style>
+:root{
+  --bg:#f1faf5;
+  --bg-glow:#dff5ea;
+  --hero:linear-gradient(135deg,#f3fdf8 0%,#ddf6ea 100%);
+  --card:rgba(255,255,255,.92);
+  --text:#141b23;
+  --sec:#44554d;
+  --accent:#087d54;
+  --accent-hover:#066342;
+  --pill-bg:#ddf5e8;
+  --pill-border:#bfe5d2;
+  --pill-text:#065c3e;
+  --line:#d2e7dc;
+  --shadow:0 6px 20px rgba(8,125,84,.06);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#070a08;
+  --bg-glow:#0c1711;
+  --hero:linear-gradient(135deg,#111a15 0%,#161a18 100%);
+  --card:#131815;
+  --text:#eef4f0;
+  --sec:#aab8b0;
+  --accent:#4ade9b;
+  --accent-hover:#6ee7b0;
+  --pill-bg:#192920;
+  --pill-border:#2a4537;
+  --pill-text:#6ee7b0;
+  --line:#24332a;
+  --shadow:none;
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:radial-gradient(circle at top right,var(--bg-glow) 0%,var(--bg) 52%);
+  background-color:var(--bg);
+  color:var(--text);
+  font:16.5px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-text-size-adjust:100%;
+}
+.skip{
+  position:absolute;
+  left:-9999px;
+  top:0;
+  background:var(--accent);
+  color:#fff;
+  padding:.65rem 1rem;
+  border-radius:10px;
+  font-weight:600;
+  z-index:10;
+}
+.skip:focus{left:1rem;top:1rem}
+main{max-width:48rem;margin:0 auto;padding:1.25rem 1rem 3rem}
+.hero{
+  background:var(--hero);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:1.25rem 1.25rem 1.15rem;
+  box-shadow:var(--shadow);
+  margin-bottom:1.15rem;
+}
+.brand-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:.75rem;
+  flex-wrap:wrap;
+  margin-bottom:.7rem;
+}
+.brand{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--text);
+  letter-spacing:-.01em;
+}
+.brand-logo{
+  width:36px;
+  height:36px;
+  border-radius:10px;
+  display:block;
+  flex:none;
+}
+@media (prefers-color-scheme:dark){.skip{color:#052115}}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding:.24rem .65rem;
+  border-radius:999px;
+  background:var(--pill-bg);
+  border:1px solid var(--pill-border);
+  color:var(--pill-text);
+  font-size:.82rem;
+  font-weight:600;
+}
+h1{font-size:1.68rem;line-height:1.22;margin:.15rem 0 .35rem;letter-spacing:-.015em}
+.meta{color:var(--sec);margin:0;font-size:.92rem;font-weight:500}
+.subtitle{color:var(--text);margin:.55rem 0 0;font-size:.97rem}
+nav{
+  display:flex;
+  gap:.5rem;
+  flex-wrap:wrap;
+  margin-top:1rem;
+  padding-top:.9rem;
+  border-top:1px solid var(--line);
+}
+nav a{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  padding:.4rem .85rem;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:var(--card);
+  color:var(--text);
+  text-decoration:none;
+  font-size:.9rem;
+  font-weight:600;
+}
+nav a:hover{border-color:var(--accent);color:var(--accent-hover)}
+nav a.active{
+  background:var(--pill-bg);
+  border-color:var(--pill-border);
+  color:var(--pill-text);
+}
+a{color:var(--accent);text-underline-offset:2px}
+a:hover{color:var(--accent-hover)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:1.05rem 1.2rem;
+  margin-bottom:.85rem;
+  box-shadow:var(--shadow);
+}
+h2{font-size:1.15rem;line-height:1.35;margin:0 0 .55rem;color:var(--accent);letter-spacing:-.01em}
+p{margin:.55rem 0;overflow-wrap:anywhere}
+p:last-child,ul:last-child{margin-bottom:0}
+ul{margin:.5rem 0;padding-left:1.25rem}
+li{margin:.35rem 0;overflow-wrap:anywhere}
+.download-btn{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  padding:.55rem 1rem;
+  margin-top:.35rem;
+  border-radius:999px;
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:.94rem;
+}
+.download-btn:hover{background:var(--accent-hover);color:#fff}
+@media (prefers-color-scheme:dark){.download-btn,.download-btn:hover{color:#052115}}
+footer{
+  margin-top:1.75rem;
+  padding:1.1rem .25rem 0;
+  border-top:1px solid var(--line);
+  color:var(--sec);
+  font-size:.88rem;
+}
+.footer-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.4rem 1rem;
+  margin-top:.55rem;
+}
+@media (max-width:540px){
+  main{padding:.85rem .75rem 2.25rem}
+  .hero{padding:1rem;border-radius:18px}
+  .card{padding:.95rem 1rem;border-radius:16px}
+  h1{font-size:1.45rem}
+  nav a{font-size:.87rem;padding:.35rem .75rem}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<main>
+<header class="hero">
+<div class="brand-row">
+<span class="brand"><img class="brand-logo" src="assets/logo.png" alt="SuperPotli" width="36" height="36">SuperPotli</span>
+<span class="badge">100% Offline Android Toolkit</span>
+</div>
+<h1>SuperPotli Open-Source Notices</h1>
+<p class="meta">Last updated: 27 November 2026</p>
+<p class="subtitle">Third-party open-source attribution and the LGPL source offer for SuperPotli&#x27;s offline MP3 encoder library.</p>
+<nav aria-label="SuperPotli legal and support pages">
+<a href="index.html">Privacy Policy</a>
+<a href="terms.html">Terms of Use</a>
+<a href="refunds.html">Refund Information</a>
+<a href="contact.html">Contact &amp; Support</a>
+<a class="active" aria-current="page" href="open-source.html">Open-Source Notices</a>
+</nav>
+</header>
+<div id="content">
+<section class="card">
+<h2 id="oss-what">What this page is</h2>
+<p>SuperPotli (com.superpotli.app) is closed-source software published by S Projects ("All rights reserved"). It incorporates open-source libraries, fonts, icons, and sound assets, each governed by its own licence. Complete third-party licence texts are also available offline inside the app under Settings &gt; About &gt; Licenses.</p>
+</section>
+<section class="card">
+<h2 id="oss-lame">MP3 Encoder Source Offer (LAME 3.100 — LGPL v2+)</h2>
+<p>When you convert or extract audio to MP3 offline, SuperPotli loads a separate native library (<code>libsuperpotli_mp3.so</code>) built from the LAME 3.100 MP3 encoder (<a href="https://lame.sourceforge.io" rel="noopener noreferrer">lame.sourceforge.io</a>, licensed under the GNU Lesser General Public License, version 2 or later) and a small JNI bridge written for SuperPotli.</p>
+<p>In accordance with the LGPL, the complete corresponding source archive for <code>libsuperpotli_mp3.so</code> (containing the LAME 3.100 source tarball, SHA-256 checksum, JNI bridge source, Android NDK build script, LGPL licence text, and rebuild instructions) is available for direct download below. Everything else in SuperPotli remains proprietary ("All rights reserved"). This source offer remains valid for at least three years following distribution of any version containing this library. If you need assistance obtaining the archive, email <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a>.</p>
+<p><a class="download-btn" href="mp3-source/superpotli-mp3-source.zip" download>Download superpotli-mp3-source.zip (1.5 MB)</a></p>
+</section>
+<section class="card">
+<h2 id="oss-android">Core Android, Document, Media &amp; OCR Libraries</h2>
+<ul>
+<li><strong>AndroidX, Jetpack Compose, Material3, CameraX, Media3, DataStore &amp; Kotlin Standard Libraries</strong> — Apache-2.0.</li>
+<li><strong>PDFBox-Android (2.0.27.0)</strong> — Apache-2.0 (includes Liberation Sans under SIL OFL-1.1, Adobe CMap/metrics, and Unicode Scripts.txt).</li>
+<li><strong>Bouncy Castle (1.72)</strong> — Bouncy Castle Licence (MIT-style), used offline for PDF password protection and decryption.</li>
+<li><strong>Tesseract4Android (4.9.0) &amp; English tessdata_fast (4.1.0)</strong> — Apache-2.0 (includes Leptonica BSD-2-Clause style, libjpeg IJG/BSD/zlib, and libpng licence).</li>
+<li><strong>ZXing Core</strong> — Apache-2.0, used offline for QR and barcode scanning/generation.</li>
+<li><strong>Java Native Access (JNA 5.19.1)</strong> — Used under Apache-2.0.</li>
+<li><strong>Google Play Billing Library (8.0.0)</strong> — Android Software Development Kit License (Transport runtime Apache-2.0), used strictly for optional one-time Lifetime Pro purchase and restoration.</li>
+</ul>
+</section>
+<section class="card">
+<h2 id="oss-engine">Offline Rust Document Engine</h2>
+<ul>
+<li><strong>GridCraft, WordCraft, DeckCraft &amp; krilla</strong> — MIT OR Apache-2.0 (offline Excel, Word, and PowerPoint rendering and conversion).</li>
+<li><strong>UniFFI (0.32.2, unmodified Kotlin bindings)</strong> — MPL-2.0 (<a href="https://github.com/mozilla/uniffi-rs" rel="noopener noreferrer">github.com/mozilla/uniffi-rs</a>).</li>
+<li><strong>Rust Dependency Set</strong> — 230 permissive crates (MIT, Apache-2.0, MPL-2.0, BSD-2/3-Clause, Unicode-3.0, Zlib; zero GPL/AGPL crates).</li>
+</ul>
+</section>
+<section class="card">
+<h2 id="oss-assets">Fonts, Icons &amp; Audio Assets</h2>
+<ul>
+<li><strong>Fonts:</strong> Source Sans 3, Source Serif 4, Inter, JetBrains Mono, Dancing Script, Liberation Sans, Noto Emoji (SIL Open Font License 1.1); Ubuntu Light (Ubuntu Font Licence 1.0); Hack (MIT / Bitstream Vera).</li>
+<li><strong>Icons:</strong> Material Icons (Apache-2.0), Tabler Icons 3.52.0 (MIT), Lucide 1.76.0 (ISC), Phosphor Icons core 2.1.1 (MIT).</li>
+<li><strong>Sound Effects:</strong> Interface click (Kenney Interface Sounds, CC0 1.0) and coin flip excerpt (Freesound / Raventhornn, CC0 1.0).</li>
+</ul>
+</section>
+<section class="card">
+<h2 id="oss-contact">Open-Source Inquiries</h2>
+<p>S Projects<br>
+Email: <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a></p>
+</section>
+</div>
+<footer>
+<div>SuperPotli (com.superpotli.app) is an independent offline Android app by S Projects · Support: <a href="mailto:Sproject01@proton.me">Sproject01@proton.me</a></div>
+<div class="footer-links"><a href="index.html">Privacy Policy</a> <a href="terms.html">Terms of Use</a> <a href="refunds.html">Refund Information</a> <a href="contact.html">Contact &amp; Support</a> <a href="open-source.html">Open-Source Notices</a></div>
+</footer>
+</main>
+</body>
+</html>
